@@ -25,11 +25,11 @@ int main(){
 
 
     
-    // sort(vec.begin(), vec.end(), [&](const pair<char, int>& a, const pair<char, int>& b) {
-    //     return a.second > b.second;
-    // });
+    sort(vec.begin(), vec.end(), [&](const pair<char, int>& a, const pair<char, int>& b) {
+        return a.second > b.second;
+    });
 
-    sort(vec.begin(), vec.end(), greater<int>());
+    // sort(vec.begin(), vec.end(), greater<int>());
 
     for(const auto& pair:vec){
         cout<<pair.first<<" "<<pair.second<<endl;
